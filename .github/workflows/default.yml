@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - feature/create_default_ci
 jobs:
   Compile:
     runs-on: ubuntu-20.04
@@ -12,11 +13,16 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Build 🔧
+        run: |
+          mkdir dist
+          cp -r ./*.* ./dist
+
       - name: Deploy 🚀
         uses: crazy-max/ghaction-github-pages@v1
         with:
           target_branch: gh-pages
-          build_dir: "."
+          build_dir: dist
           repo: bee-tec/www.mfzcw.com
         env:
-          GITHUB_PAT: ${{ secrets.DEPLOY_KEY }}`
+          GITHUB_PAT: ${{ secrets.DEPLOY_KEY }}
