@@ -1,0 +1,28 @@
+{
+  "name": "bee-index",
+  "version": "1.0.0",
+  "description": "🐝 Bee official website.",
+  "main": "index.js",
+  "scripts": {
+    "commit": "cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bee-tec/bee-index.git"
+  },
+  "author": "",
+  "devDependencies": {
+    "commitizen": "^4.2.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "standard-version": "^9.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/bee-tec/bee-index/issues"
+  },
+  "homepage": "https://github.com/bee-tec/bee-index#readme"
+}
