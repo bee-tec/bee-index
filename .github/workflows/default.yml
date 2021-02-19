@@ -1,0 +1,22 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Compile:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
+        with:
+          persist-credentials: false
+
+      - name: Deploy 🚀
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: "."
+          repo: bee-tec/www.mfzcw.com
+        env:
+          GITHUB_PAT: ${{ secrets.DEPLOY_KEY }}`
