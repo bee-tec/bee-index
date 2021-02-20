@@ -1,29 +1,22 @@
 html,
 body {
+  position: relative;
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.swiper-container {
   width: 100%;
   height: 100%;
-  font-family: MicrosoftYaHei;
 }
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+#swiper-container2 .swiper-slide {
+  height: auto;
 }
 .container {
-  max-width: 1350px !important;
+  max-width: 80% !important;
+  height: 100%;
 }
 #header {
   width: 100%;
@@ -37,26 +30,22 @@ body {
 }
 #header .container-fluid #nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  height: 60px;
+  padding: 10px 15%;
   background-color: rgba(0, 0, 0, 0.4);
 }
-#header .container-fluid #nav .navbar-brand {
-  margin-right: 350px;
-}
 #header .container-fluid #nav .nav .nav-item {
-  width: 70px;
-  margin: 0 33px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #header .container-fluid #nav .nav .nav-item .nav-link {
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 2px;
-  line-height: 38px;
   padding: 0;
   cursor: pointer;
 }
@@ -66,7 +55,6 @@ body {
 #main {
   width: 100%;
   height: 100%;
-  margin: auto;
 }
 #main .outline {
   background-image: url("../img/banner.jpg");
@@ -90,184 +78,182 @@ body {
   padding: 0;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
 }
 #main .outline .container-fluid .outline-box {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#main .outline .container-fluid .outline-box .outline-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
 }
-#main .outline .container-fluid .outline-box .outline-title {
-  font-size: 50px;
-  letter-spacing: 5px;
-  line-height: 65px;
+#main .outline .container-fluid .outline-box .outline-title .outline-zh {
+  font-size: 100px;
+  letter-spacing: 10px;
   font-weight: 600;
 }
-#main .outline .container-fluid .outline-box .outline-en {
+#main .outline .container-fluid .outline-box .outline-title .outline-en {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 28px;
   opacity: 0.5;
 }
-#main .outline .container-fluid .outline-box .outline-en .line {
+#main .outline .container-fluid .outline-box .outline-title .outline-en .line {
   display: inline-block;
-  width: 150px;
+  width: 220px;
   border-top: 1px solid #ccc;
 }
-#main .outline .container-fluid .outline-box .outline-en .text {
-  padding: 0 60px;
+#main .outline .container-fluid .outline-box .outline-title .outline-en .text {
+  padding: 15px 120px;
 }
 #main .outline .container-fluid .outline-box .outline-detail {
-  margin-top: 90px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
 #main .outline .container-fluid .outline-box .outline-detail .item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 245px;
 }
 #main .outline .container-fluid .outline-box .outline-detail .item .icon {
-  width: 100%;
-  height: 133px;
+  width: 190px;
+  height: 190px;
   background-repeat: no-repeat;
   background-position: center center;
-  margin-bottom: 10px;
+  background-size: contain;
+  margin-bottom: 15px;
 }
 #main .outline .container-fluid .outline-box .outline-detail .item .text {
-  font-size: 20px;
+  font-size: 28px;
+  letter-spacing: 6px;
 }
 #main .outline .container-fluid .outline-box .outline-detail .item .text span {
-  font-size: 36px;
+  font-size: 56px;
 }
-#main .brand {
-  height: 630px;
-  background-color: #1b1b1b;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-#main .brand .tips {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  background-color: #fff;
-  color: #333333;
-}
-#main .brand .tips .free {
-  display: flex;
-  align-items: center;
-}
-#main .brand .tips .free .text {
-  padding-right: 10px;
-}
-#main .brand .tips .free .icon {
-  width: 22px;
-  height: 22px;
-  cursor: pointer;
-}
-#main .brand .container {
+#main .company {
   width: 100%;
   height: 100%;
+  background-color: #f5f5f5;
+}
+#main .company .container {
+  width: 100%;
+  height: 90%;
   margin: auto;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-#main .brand .container .brand-img {
-  width: 570px;
-  height: 610px;
+#main .company .container .company-brand {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .company .container .company-brand .brand-img {
+  width: 550px;
+  height: 550px;
   background-repeat: no-repeat;
 }
-#main .brand .container .brand-detail {
-  max-width: 680px;
-  color: #ffffff;
+#main .company .container .company-brand .brand-detail {
+  max-width: 800px;
+  color: #000000;
   text-align: left;
+  letter-spacing: 2px;
 }
-#main .brand .container .brand-detail .brand-title h1 {
+#main .company .container .company-brand .brand-detail .brand-title h1 {
   font-size: 48px;
   letter-spacing: 2px;
 }
-#main .brand .container .brand-detail .brand-title h3 {
+#main .company .container .company-brand .brand-detail .brand-title h3 {
   font-size: 26px;
 }
-#main .brand .container .brand-detail .brand-title h5 {
+#main .company .container .company-brand .brand-detail .brand-title h5 {
   width: 45px;
-  border-bottom: 7px solid #fff;
+  border-bottom: 7px solid #000000;
 }
-#main .brand .container .brand-detail .brand-title .title {
+#main .company .container .company-brand .brand-detail .brand-title .title {
   padding: 5px 0;
 }
-#main .brand .container .brand-detail .content {
+#main .company .container .company-brand .brand-detail .content {
   margin-top: 25px;
   line-height: 36px;
   text-indent: 2em;
 }
-#main .brand .container .brand-detail .content p {
+#main .company .container .company-brand .brand-detail .content p {
   margin: 0;
 }
-#main .company {
-  width: 100%;
-  padding: 30px 0;
-  background-color: #f5f5f5;
-}
-#main .company .container .company-title {
+#main .company .container .company-detail .company-title {
   text-align: left;
   padding: 0 0 20px 0;
 }
-#main .company .container .company-title .text {
+#main .company .container .company-detail .company-title .text {
   font-size: 24px;
   line-height: 40px;
   color: #333333;
 }
-#main .company .container .company-title .line {
+#main .company .container .company-detail .company-title .line {
   width: 160px;
   border-bottom: 2px solid #004674;
 }
-#main .company .container .company-content {
+#main .company .container .company-detail .company-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#main .company .container .company-content .company-img-1 {
+#main .company .container .company-detail .company-content .company-img-1 {
   background-position: -90px -45px;
   background-repeat: no-repeat;
 }
-#main .company .container .company-content .company-img-2 {
+#main .company .container .company-detail .company-content .company-img-2 {
   background-position: 0 -125px;
   background-repeat: no-repeat;
 }
-#main .company .container .company-content .company-img-3 {
+#main .company .container .company-detail .company-content .company-img-3 {
   background-position: -25px -50px;
   background-repeat: no-repeat;
 }
-#main .company .container .company-content .item {
+#main .company .container .company-detail .company-content .item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
   width: 430px;
   height: 270px;
   margin-bottom: 15px;
   padding: 25px;
   background-color: #ffffff;
+  letter-spacing: 2px;
 }
-#main .company .container .company-content .item .title .text {
+#main .company .container .company-detail .company-content .item .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#main .company .container .company-detail .company-content .item .title .text {
   font-size: 40px;
 }
-#main .company .container .company-content .item .title .line {
+#main .company .container .company-detail .company-content .item .title .line {
   width: 30px;
   border-bottom: 4px solid #0db7d4;
 }
-#main .company .container .company-content .item .detail {
+#main .company .container .company-detail .company-content .item .detail {
   margin: 30px 0 0 0;
   font-size: 20px;
   line-height: 32px;
@@ -276,17 +262,17 @@ body {
 #main .result {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
 }
 #main .result .result-box {
+  width: 100%;
+  height: 100%;
   background-image: url("../img/result-bg.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
 }
-#main .result .result-box .result-content {
+#main .result .result-box .result-mask {
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -294,20 +280,25 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
 }
-#main .result .result-box .result-content .container {
+#main .result .result-box .result-mask .container {
   padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-#main .result .result-box .result-content .container hgroup {
+#main .result .result-box .result-mask .container hgroup {
   text-align: left;
   color: #ffffff;
   display: flex;
   flex-direction: column;
 }
-#main .result .result-box .result-content .container hgroup h3 {
-  font-size: 45px;
+#main .result .result-box .result-mask .container hgroup h3 {
+  font-size: 70px;
+  letter-spacing: 8px;
 }
-#main .result .result-box .result-content .container hgroup h1 {
-  font-size: 210px;
+#main .result .result-box .result-mask .container hgroup h1 {
+  font-size: 260px;
+  letter-spacing: 8px;
 }
 #main .cooperate {
   width: 100%;
@@ -349,11 +340,11 @@ body {
   font-size: 20px;
   color: #ffffff;
 }
-#main .flow {
+#main .business {
   width: 100%;
   height: 100%;
 }
-#main .flow .flow-box {
+#main .business .business-box {
   width: 100%;
   height: 100%;
   background-image: url("../img/flow-bg.png");
@@ -361,62 +352,105 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#main .flow .flow-box .flow-mask {
+#main .business .business-box .business-mask {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
 }
-#main .flow .flow-box .flow-mask .container .flow-title {
+#main .business .business-box .business-mask .container .cooperate .cooperate-title {
   text-align: left;
-  padding: 55px 0;
+  padding: 0 0 20px 0;
 }
-#main .flow .flow-box .flow-mask .container .flow-title .text {
+#main .business .business-box .business-mask .container .cooperate .cooperate-title .text {
   font-size: 24px;
   line-height: 40px;
   color: #ffffff;
 }
-#main .flow .flow-box .flow-mask .container .flow-title .line {
+#main .business .business-box .business-mask .container .cooperate .cooperate-title .line {
   width: 160px;
   border-bottom: 2px solid #004674;
 }
-#main .flow .flow-box .flow-mask .container .flow-content {
+#main .business .business-box .business-mask .container .cooperate .cooperate-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#main .flow .flow-box .flow-mask .container .flow-content .item {
+#main .business .business-box .business-mask .container .cooperate .cooperate-content .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 22%;
+  height: 220px;
+  padding: 25px 0;
+  background-color: #4c4c4c;
+}
+#main .business .business-box .business-mask .container .cooperate .cooperate-content .item .cooperate-img {
+  display: block;
+  width: 128px;
+  height: 128px;
+}
+#main .business .business-box .business-mask .container .cooperate .cooperate-content .item .text {
+  font-size: 20px;
+  color: #ffffff;
+}
+#main .business .business-box .business-mask .container .flow {
+  width: 100%;
+}
+#main .business .business-box .business-mask .container .flow .flow-title {
+  text-align: left;
+  padding: 55px 0;
+}
+#main .business .business-box .business-mask .container .flow .flow-title .text {
+  font-size: 24px;
+  line-height: 40px;
+  color: #ffffff;
+}
+#main .business .business-box .business-mask .container .flow .flow-title .line {
+  width: 160px;
+  border-bottom: 2px solid #004674;
+}
+#main .business .business-box .business-mask .container .flow .flow-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#main .business .business-box .business-mask .container .flow .flow-content .item {
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 430px;
+  text-align: left;
+  width: 30%;
   height: 270px;
   margin-bottom: 15px;
   padding: 25px;
   background-color: #ffffff;
 }
-#main .flow .flow-box .flow-mask .container .flow-content .item .flow-item-img {
+#main .business .business-box .business-mask .container .flow .flow-content .item .flow-item-img {
   position: absolute;
   top: 15px;
   right: 20px;
 }
-#main .flow .flow-box .flow-mask .container .flow-content .item .title {
+#main .business .business-box .business-mask .container .flow .flow-content .item .title {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#main .flow .flow-box .flow-mask .container .flow-content .item .title .text {
-  font-size: 24px;
+#main .business .business-box .business-mask .container .flow .flow-content .item .title .text {
+  font-size: 30px;
   line-height: 65px;
 }
-#main .flow .flow-box .flow-mask .container .flow-content .item .title .line {
+#main .business .business-box .business-mask .container .flow .flow-content .item .title .line {
   width: 30px;
   border-bottom: 4px solid #004674;
 }
-#main .flow .flow-box .flow-mask .container .flow-content .item .detail {
+#main .business .business-box .business-mask .container .flow .flow-content .item .detail {
   margin: 25px 0 0 0;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 36px;
+  letter-spacing: 2px;
   color: #666666;
 }
 #main .instance {
