@@ -74,4 +74,48 @@ $(function () {
       el: ".swiper-scrollbar",
     },
   });
+  var mySwiper3 = new Swiper("#swiper-container3", {
+    //子swiper
+    direction: "vertical",
+    nested: true,
+    //resistanceRatio: 0,
+    slidesPerView: "auto",
+    freeMode: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+  var mySwiper4 = new Swiper("#swiper-container4", {
+    //子swiper
+    direction: "vertical",
+    nested: true,
+    //resistanceRatio: 0,
+    slidesPerView: "auto",
+    freeMode: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+  var mySwiper5 = new Swiper("#swiper-container5", {
+    //子swiper
+    direction: "vertical",
+    nested: true,
+    //resistanceRatio: 0,
+    slidesPerView: "auto",
+    freeMode: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
+  var mySwiper6 = new Swiper("#swiper-container6", {
+    //子swiper
+    direction: "vertical",
+    nested: true,
+    //resistanceRatio: 0,
+    slidesPerView: "auto",
+    freeMode: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+    },
+  });
 });
