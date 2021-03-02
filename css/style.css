@@ -12,6 +12,11 @@
     background-color: rgba(0, 0, 0);
     box-sizing: border-box;
   }
+  #main #nav .logo {
+    max-width: 140px;
+    min-width: 140px;
+    height: auto;
+  }
   #main #nav .navbar-brand {
     margin: 0;
     padding: 0;
@@ -138,8 +143,8 @@
     font-size: 13px;
     letter-spacing: 1px;
   }
-  #main #fullpage #outline .container-box .outline-box .detail .item .text span {
-    font-size: 20px;
+  #main #fullpage #outline .container-box .outline-box .detail .item .text .number {
+    font-size: 22px;
   }
   #main #fullpage #company {
     width: 100%;
@@ -322,7 +327,7 @@
     letter-spacing: 3px;
   }
   #main #fullpage #success .success-box .mask .container-box hgroup h1 {
-    font-size: 52px;
+    font-size: 50px;
     letter-spacing: 8px;
   }
   #main #fullpage #business {
@@ -389,7 +394,7 @@
     width: 45%;
     height: auto;
     padding: 20px 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
     margin-bottom: 20px;
   }
   #main #fullpage #business .business-box .mask .container-box .cooperate .cooperate-content .item .cooperate-img {
@@ -577,11 +582,17 @@
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel {
     display: flex;
     flex-direction: column;
+    position: relative;
     padding: 5px 0;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel span {
     font-size: 14px;
     padding: 2px 0;
+  }
+  #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel .qr {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .photo {
     display: none;
@@ -599,10 +610,10 @@
   }
   #main #fullpage #cooperation .container-box #footer .footer-box {
     width: 85%;
+    min-height: 60px;
     margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   #main #fullpage #cooperation .container-box #footer .footer-box .copyright {
@@ -610,12 +621,6 @@
     flex: 1;
     font-size: 14px;
     color: #999999;
-  }
-  #main #fullpage #cooperation .container-box #footer .footer-box .qr {
-    display: flex;
-    flex: 1.5;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (min-width: 450px) and (max-width: 510px) {
@@ -632,6 +637,11 @@
     background-color: rgba(0, 0, 0);
     box-sizing: border-box;
   }
+  #main #nav .logo {
+    max-width: 150px;
+    min-width: 150px;
+    height: auto;
+  }
   #main #nav .navbar-brand {
     margin: 0;
     padding: 0;
@@ -758,8 +768,8 @@
     font-size: 16px;
     letter-spacing: 3px;
   }
-  #main #fullpage #outline .container-box .outline-box .detail .item .text span {
-    font-size: 26px;
+  #main #fullpage #outline .container-box .outline-box .detail .item .text .number {
+    font-size: 28px;
   }
   #main #fullpage #company {
     width: 100%;
@@ -902,13 +912,13 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
   }
   #main #fullpage #success .success-box .mask .container-box {
     width: 85%;
-    height: 100%;
+    height: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -925,8 +935,8 @@
     letter-spacing: 6px;
   }
   #main #fullpage #success .success-box .mask .container-box hgroup h1 {
-    font-size: 72px;
-    letter-spacing: 20px;
+    font-size: 70px;
+    letter-spacing: 18px;
   }
   #main #fullpage #business {
     width: 100%;
@@ -981,7 +991,7 @@
     width: 45%;
     height: 150px;
     padding: 20px 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
     margin-bottom: 20px;
   }
   #main #fullpage #business .business-box .mask .container-box .cooperate .cooperate-content .item .cooperate-img {
@@ -1144,10 +1154,16 @@
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel span {
     font-size: 18px;
     padding: 10px 0;
+  }
+  #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel .qr {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .photo {
     display: none;
@@ -1165,19 +1181,14 @@
   }
   #main #fullpage #cooperation .container-box #footer .footer-box {
     width: 85%;
+    min-height: 65px;
     margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   #main #fullpage #cooperation .container-box #footer .footer-box .copyright {
     color: #999999;
-  }
-  #main #fullpage #cooperation .container-box #footer .footer-box .qr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (min-width: 510px) and (max-width: 610px) {
@@ -1194,6 +1205,11 @@
     background-color: rgba(0, 0, 0);
     box-sizing: border-box;
   }
+  #main #nav .logo {
+    max-width: 160px;
+    min-width: 160px;
+    height: auto;
+  }
   #main #nav .navbar-brand {
     margin: 0;
     padding: 0;
@@ -1320,8 +1336,8 @@
     font-size: 16px;
     letter-spacing: 3px;
   }
-  #main #fullpage #outline .container-box .outline-box .detail .item .text span {
-    font-size: 26px;
+  #main #fullpage #outline .container-box .outline-box .detail .item .text .number {
+    font-size: 28px;
   }
   #main #fullpage #company {
     width: 100%;
@@ -1464,13 +1480,13 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
   }
   #main #fullpage #success .success-box .mask .container-box {
     width: 85%;
-    height: 100%;
+    height: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1487,8 +1503,8 @@
     letter-spacing: 6px;
   }
   #main #fullpage #success .success-box .mask .container-box hgroup h1 {
-    font-size: 72px;
-    letter-spacing: 20px;
+    font-size: 70px;
+    letter-spacing: 18px;
   }
   #main #fullpage #business {
     width: 100%;
@@ -1543,7 +1559,7 @@
     width: 45%;
     height: 150px;
     padding: 20px 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
     margin-bottom: 20px;
   }
   #main #fullpage #business .business-box .mask .container-box .cooperate .cooperate-content .item .cooperate-img {
@@ -1706,10 +1722,16 @@
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel span {
     font-size: 18px;
     padding: 10px 0;
+  }
+  #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel .qr {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .photo {
     display: none;
@@ -1727,19 +1749,14 @@
   }
   #main #fullpage #cooperation .container-box #footer .footer-box {
     width: 85%;
+    min-height: 70px;
     margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   #main #fullpage #cooperation .container-box #footer .footer-box .copyright {
     color: #999999;
-  }
-  #main #fullpage #cooperation .container-box #footer .footer-box .qr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (min-width: 610px) and (max-width: 768px) {
@@ -1755,6 +1772,11 @@
     justify-content: space-between;
     background-color: rgba(0, 0, 0);
     box-sizing: border-box;
+  }
+  #main #nav .logo {
+    max-width: 170px;
+    min-width: 170px;
+    height: auto;
   }
   #main #nav .navbar-brand {
     margin: 0;
@@ -1882,8 +1904,8 @@
     font-size: 18px;
     letter-spacing: 4px;
   }
-  #main #fullpage #outline .container-box .outline-box .detail .item .text span {
-    font-size: 28px;
+  #main #fullpage #outline .container-box .outline-box .detail .item .text .number {
+    font-size: 30px;
   }
   #main #fullpage #company {
     width: 100%;
@@ -1948,7 +1970,7 @@
     margin-top: 10px;
     text-align: center;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 13px;
   }
   #main #fullpage #company .container-box .brand .brand-detail .content p {
     margin: 0;
@@ -2026,13 +2048,13 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
   }
   #main #fullpage #success .success-box .mask .container-box {
     width: 85%;
-    height: 100%;
+    height: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -2070,11 +2092,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
   #main #fullpage #business .business-box .mask .container-box {
     width: 85%;
-    height: 100%;
+    height: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -2103,8 +2125,8 @@
     justify-content: space-between;
     width: 45%;
     height: 150px;
-    padding: 20px 0;
-    background-color: #ffffff;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.85);
     margin-bottom: 20px;
   }
   #main #fullpage #business .business-box .mask .container-box .cooperate .cooperate-content .item .cooperate-img {
@@ -2267,10 +2289,16 @@
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel span {
     font-size: 20px;
     padding: 10px 0;
+  }
+  #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel .qr {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .photo {
     display: none;
@@ -2288,19 +2316,14 @@
   }
   #main #fullpage #cooperation .container-box #footer .footer-box {
     width: 85%;
+    min-height: 70px;
     margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   #main #fullpage #cooperation .container-box #footer .footer-box .copyright {
     color: #999999;
-  }
-  #main #fullpage #cooperation .container-box #footer .footer-box .qr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2320,6 +2343,11 @@
     left: 0;
     background-color: rgba(0, 0, 0);
     box-sizing: border-box;
+  }
+  #main #nav .logo {
+    max-width: 170px;
+    min-width: 170px;
+    height: auto;
   }
   #main #nav .navbar-brand {
     margin: 0;
@@ -2437,8 +2465,8 @@
     font-size: 18px;
     letter-spacing: 4px;
   }
-  #main #fullpage #outline .container-box .outline-box .detail .item .text span {
-    font-size: 28px;
+  #main #fullpage #outline .container-box .outline-box .detail .item .text .number {
+    font-size: 30px;
   }
   #main #fullpage #company {
     width: 100%;
@@ -2581,13 +2609,13 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
   }
   #main #fullpage #success .success-box .mask .container-box {
     width: 85%;
-    height: calc(100% - 50px);
+    height: calc(85% - 50px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -2604,7 +2632,7 @@
     letter-spacing: 6px;
   }
   #main #fullpage #success .success-box .mask .container-box hgroup h1 {
-    font-size: 90px;
+    font-size: 88px;
     letter-spacing: 20px;
   }
   #main #fullpage #business {
@@ -2659,7 +2687,7 @@
     width: 23%;
     height: 170px;
     padding: 18px 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
   }
   #main #fullpage #business .business-box .mask .container-box .cooperate .cooperate-content .item .cooperate-img {
     display: block;
@@ -2821,10 +2849,16 @@
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel span {
     font-size: 20px;
     padding: 10px 0;
+  }
+  #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel .qr {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .photo {
     display: none;
@@ -2842,19 +2876,14 @@
   }
   #main #fullpage #cooperation .container-box #footer .footer-box {
     width: 85%;
+    min-height: 80px;
     margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   #main #fullpage #cooperation .container-box #footer .footer-box .copyright {
     color: #999999;
-  }
-  #main #fullpage #cooperation .container-box #footer .footer-box .qr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (min-width: 1024px) and (max-width: 1360px) {
@@ -2874,6 +2903,11 @@
     left: 0;
     background-color: rgba(0, 0, 0);
     box-sizing: border-box;
+  }
+  #main #nav .logo {
+    max-width: 170px;
+    min-width: 170px;
+    height: auto;
   }
   #main #nav .navbar-brand {
     margin: 0;
@@ -2979,18 +3013,20 @@
     justify-content: space-between;
   }
   #main #fullpage #outline .container-box .outline-box .detail .item .icon {
-    width: 100px;
-    height: 100px;
+    width: 110px;
+    height: 110px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     margin-bottom: 20px;
   }
   #main #fullpage #outline .container-box .outline-box .detail .item .text {
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
   }
-  #main #fullpage #outline .container-box .outline-box .detail .item .text span {
+  #main #fullpage #outline .container-box .outline-box .detail .item .text .number {
     font-size: 28px;
   }
   #main #fullpage #company {
@@ -3004,7 +3040,7 @@
     width: 85%;
     height: calc(100% - 50px);
     margin: 0 auto;
-    padding: 20px 0 0 0;
+    padding: 30px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -3056,7 +3092,7 @@
     margin-top: 15px;
     text-align: center;
     line-height: 28px;
-    font-size: 14px;
+    font-size: 15px;
   }
   #main #fullpage #company .container-box .brand .brand-detail .content p {
     margin: 0;
@@ -3092,7 +3128,7 @@
     text-align: left;
     width: 23%;
     height: 200px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 12px;
     background-color: #ffffff;
     letter-spacing: 1px;
@@ -3131,13 +3167,13 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
   }
   #main #fullpage #success .success-box .mask .container-box {
     width: 85%;
-    height: calc(100% - 50px);
+    height: calc(85% - 50px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -3154,7 +3190,7 @@
     letter-spacing: 6px;
   }
   #main #fullpage #success .success-box .mask .container-box hgroup h1 {
-    font-size: 106px;
+    font-size: 100px;
     letter-spacing: 20px;
   }
   #main #fullpage #business {
@@ -3209,7 +3245,7 @@
     width: 22%;
     height: 170px;
     padding: 18px 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
   }
   #main #fullpage #business .business-box .mask .container-box .cooperate .cooperate-content .item .cooperate-img {
     display: block;
@@ -3371,12 +3407,19 @@
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel span {
     font-size: 18px;
-    padding: 10px 0;
+    padding: 12px 0;
+  }
+  #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel .qr {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .photo {
+    display: none;
     width: 40%;
     max-width: 700px;
     height: auto;
@@ -3391,19 +3434,14 @@
   }
   #main #fullpage #cooperation .container-box #footer .footer-box {
     width: 85%;
+    min-height: 80px;
     margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   #main #fullpage #cooperation .container-box #footer .footer-box .copyright {
     color: #999999;
-  }
-  #main #fullpage #cooperation .container-box #footer .footer-box .qr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (min-width: 1360px) and (max-width: 1660px) {
@@ -3423,6 +3461,11 @@
     left: 0;
     background-color: rgba(0, 0, 0);
     box-sizing: border-box;
+  }
+  #main #nav .logo {
+    max-width: 170px;
+    min-width: 170px;
+    height: auto;
   }
   #main #nav .navbar-brand {
     margin: 0;
@@ -3516,7 +3559,7 @@
     padding: 15px 64px;
   }
   #main #fullpage #outline .container-box .outline-box .detail {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -3537,10 +3580,12 @@
     margin-bottom: 20px;
   }
   #main #fullpage #outline .container-box .outline-box .detail .item .text {
-    font-size: 16px;
-    letter-spacing: 5px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    display: flex;
+    flex-direction: column;
   }
-  #main #fullpage #outline .container-box .outline-box .detail .item .text span {
+  #main #fullpage #outline .container-box .outline-box .detail .item .text .number {
     font-size: 34px;
   }
   #main #fullpage #company {
@@ -3554,7 +3599,7 @@
     width: 85%;
     height: calc(100% - 50px);
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -3642,7 +3687,7 @@
     text-align: left;
     width: 23%;
     height: 200px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding: 12px;
     background-color: #ffffff;
     letter-spacing: 1px;
@@ -3681,13 +3726,13 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
   }
   #main #fullpage #success .success-box .mask .container-box {
     width: 85%;
-    height: calc(100% - 50px);
+    height: calc(85% - 50px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -3759,7 +3804,7 @@
     width: 22%;
     height: 170px;
     padding: 18px 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
   }
   #main #fullpage #business .business-box .mask .container-box .cooperate .cooperate-content .item .cooperate-img {
     display: block;
@@ -3803,7 +3848,7 @@
     width: 30%;
     height: 210px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     background-color: #ffffff;
   }
   #main #fullpage #business .business-box .mask .container-box .flow .flow-content .item .flow-item-img {
@@ -3827,7 +3872,7 @@
   #main #fullpage #business .business-box .mask .container-box .flow .flow-content .item p {
     margin: 10px 0 0 0;
     text-align: justify;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 32px;
     color: #666666;
   }
@@ -3919,10 +3964,16 @@
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel span {
     font-size: 18px;
     padding: 10px 0;
+  }
+  #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel .qr {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .photo {
     width: 40%;
@@ -3939,19 +3990,14 @@
   }
   #main #fullpage #cooperation .container-box #footer .footer-box {
     width: 85%;
+    min-height: 80px;
     margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   #main #fullpage #cooperation .container-box #footer .footer-box .copyright {
     color: #999999;
-  }
-  #main #fullpage #cooperation .container-box #footer .footer-box .qr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
 @media (min-width: 1660px) and (max-width: 1920px) {
@@ -3971,6 +4017,11 @@
     left: 0;
     background-color: rgba(0, 0, 0);
     box-sizing: border-box;
+  }
+  #main #nav .logo {
+    max-width: 170px;
+    min-width: 170px;
+    height: auto;
   }
   #main #nav .navbar-brand {
     margin: 0;
@@ -4064,7 +4115,7 @@
     padding: 15px 90px;
   }
   #main #fullpage #outline .container-box .outline-box .detail {
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -4085,10 +4136,12 @@
     margin-bottom: 20px;
   }
   #main #fullpage #outline .container-box .outline-box .detail .item .text {
-    font-size: 18px;
-    letter-spacing: 6px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
   }
-  #main #fullpage #outline .container-box .outline-box .detail .item .text span {
+  #main #fullpage #outline .container-box .outline-box .detail .item .text .number {
     font-size: 40px;
   }
   #main #fullpage #company {
@@ -4102,7 +4155,7 @@
     width: 85%;
     height: calc(100% - 50px);
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 30px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -4154,7 +4207,7 @@
     margin-top: 15px;
     text-align: center;
     line-height: 32px;
-    font-size: 16px;
+    font-size: 18px;
   }
   #main #fullpage #company .container-box .brand .brand-detail .content p {
     margin: 0;
@@ -4229,13 +4282,13 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(3px);
   }
   #main #fullpage #success .success-box .mask .container-box {
     width: 85%;
-    height: calc(100% - 50px);
+    height: calc(85% - 50px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -4307,7 +4360,7 @@
     width: 22%;
     height: 170px;
     padding: 18px 0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85);
   }
   #main #fullpage #business .business-box .mask .container-box .cooperate .cooperate-content .item .cooperate-img {
     display: block;
@@ -4351,7 +4404,7 @@
     width: 30%;
     height: 210px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     background-color: #ffffff;
   }
   #main #fullpage #business .business-box .mask .container-box .flow .flow-content .item .flow-item-img {
@@ -4375,7 +4428,7 @@
   #main #fullpage #business .business-box .mask .container-box .flow .flow-content .item p {
     margin: 10px 0 0 0;
     text-align: justify;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 32px;
     color: #666666;
   }
@@ -4467,10 +4520,16 @@
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel span {
     font-size: 20px;
     padding: 10px 0;
+  }
+  #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .info .info-tel .qr {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
   }
   #main #fullpage #cooperation .container-box .cooperation-contact .contact-content .photo {
     width: 40%;
@@ -4487,18 +4546,13 @@
   }
   #main #fullpage #cooperation .container-box #footer .footer-box {
     width: 85%;
+    min-height: 80px;
     margin: 0 auto;
     height: auto;
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
   #main #fullpage #cooperation .container-box #footer .footer-box .copyright {
     color: #999999;
-  }
-  #main #fullpage #cooperation .container-box #footer .footer-box .qr {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
