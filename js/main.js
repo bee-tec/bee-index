@@ -1,17 +1,40 @@
 $(function () {
-    // 电梯
-    $(".toCompany").click(function () {
-      window.scrollTo({
-        top: $("#company").offset().top + 1,
-        behavior: "smooth",
-      });
+  //判断屏幕宽度
+  let width = window.innerWidth; //获取当前浏览器视口分辨率
+  if (width < 768) {
+    let myFullpage = new fullpage("#fullpage", {
+      menu: "#myMenu",
+      anchors: ["index", "summary", "achievement", "cooperate", "about"],
+      scrollingSpeed: 700,
+      keyboardScrolling: true,
+      recordHistory: false,
+      autoScrolling: false, //为true适用于pc端，为false适用于移动端
     });
-    $(".toCooperate").click(function () {
-      window.scrollTo({
-        top: $("#cooperate").offset().top - 500,
-        behavior: "smooth",
-      });
+  } else {
+    let myFullpage = new fullpage("#fullpage", {
+      menu: "#myMenu",
+      anchors: ["index", "summary", "achievement", "cooperate", "about"],
+      scrollingSpeed: 700,
+      keyboardScrolling: true,
+      recordHistory: false,
+      autoScrolling: true, //为true适用于pc端，为false适用于移动端
+      // onLeave: function (origin, destination, direction) {
+      //   let active = $(".menu").find(".link").eq(destination.index);
+      //   active.addClass("active");
+      //   let siblings = $(".menu").find(".link").siblings();
+      //   console.log(siblings);
+      //   //离开第二个section后
+      //   // if (origin.index == 1 && direction == "down") {
+      //   //   alert("前往第3个section！");
+      //   // } else if (origin.index == 1 && direction == "up") {
+      //   //   alert("前往第1个section！");
+      //   // }
+      // },
     });
+<<<<<<< HEAD
+  }
+});
+=======
     $(".toFlow").click(function () {
       window.scrollTo({
         top: $("#flow").offset().top - 100,
@@ -53,3 +76,4 @@ $(function () {
     //   );
     // });
   });
+>>>>>>> main
